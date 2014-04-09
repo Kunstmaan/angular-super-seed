@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:ng="http://angularjs.org"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8" xmlns:ng="http://angularjs.org">        <![endif]-->
+<!--[if IE 8]>          <html class="no-js lt-ie9" xmlns:ng="http://angularjs.org">               <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" xmlns:ng="http://angularjs.org">                  <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>Angular Super Seed</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
+
+        <link rel='stylesheet' href='css/style.css' type='text/css' />
+
+        <script src='js/modernizr-custom.js'></script>
+    </head>
+    <body ng-app="app">
+
+        <div class="app__wrapper">
+            <div ui-view></div>
+        </div>
+
+        <!-- build:js js/vendors.js -->
+            <script type="text/javascript" src="bower_vendor/es5-shim/es5-shim.js"></script>
+            <script type="text/javascript" src="bower_vendor/jquery/dist/jquery.js"></script>
+            <script type="text/javascript" src="bower_vendor/lodash/dist/lodash.compat.js"></script>
+
+            <script type="text/javascript" src="bower_vendor/angular/angular.js"></script>
+
+            <script type="text/javascript" src="bower_vendor/angular-sanitize/angular-sanitize.js"></script>
+            <script type="text/javascript" src="bower_vendor/angular-animate/angular-animate.js"></script>
+            <script type="text/javascript" src="bower_vendor/angular-ui-router/release/angular-ui-router.js"></script>
+            <script type="text/javascript" src="bower_vendor/angular-svg-png/angular-svg-png.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js js/app.js -->
+            <!-- fileblock:js app -->
+            <!-- endfileblock -->
+        <!-- endbuild -->
+    </body>
+</html>
+

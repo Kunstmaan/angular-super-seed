@@ -1,0 +1,12 @@
+{
+    "home": {
+        "path": "/",
+        "templateUrl": "home.html",
+        "controller": "HomeCtrl",
+        "default": true,
+        "mixins": ["state"],
+        "resolve": {
+            "features": "featuresResolver"
+        }
+    }
+}

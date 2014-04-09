@@ -1,0 +1,11 @@
+{
+    "features": [
+        "Environment specific configuration",
+        "Feature specific configuration",
+        "State based routing (UI-Router)",
+        "Routing by configuration",
+        "Mixins",
+        "Resolvers"
+    ]
+}
+

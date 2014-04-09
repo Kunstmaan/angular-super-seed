@@ -1,0 +1,21 @@
+{
+  "name": "angular-super-seed",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "<2.0.0",
+    "json3": "~3.3.0",
+    "es5-shim": "~2.0.8",
+    "angular": "1.2.15",
+    "angular-mocks": "v1.2.14",
+    "angular-sanitize": "v1.2.14",
+    "angular-animate": "v1.2.14",
+    "angular-translate-loader-partial": "~2.0.0",
+    "angular-ui-router": "0.2.7",
+    "angular-svg-png": "*",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "1.2.15"
+  }
+}
