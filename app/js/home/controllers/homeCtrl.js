@@ -1,11 +1,17 @@
-'use strict';
-// ci:coverage:exclude
+(function(app) {
+    'use strict';
 
-angular.module('app.home')
-    .controller('HomeCtrl', ['$scope', 'config', 'features', function ($scope, config, features) {
+    function HomeCtrl($scope, config, features) {
+        var vm = this;
 
-        $scope.env = config.env;
-        $scope.features = features;
+        vm.env = config.env;
+        vm.features = features;
+    }
 
-    }]);
+    HomeCtrl.prototype.alertMe = function (feature) {
+        alert(feature + '!');
+    }
 
+    app.controller('HomeCtrl', ['$scope', 'config', 'features', HomeCtrl]);
+
+})(angular.module('app.home'));
