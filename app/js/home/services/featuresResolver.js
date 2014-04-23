@@ -8,7 +8,7 @@ angular.module('app.home')
         this.$get = ['config', function(config) {
             var _self = this;
 
-            return function(/* $stateParams can be injected here */) {
+            return function (/* $stateParams can be injected here */) {
                 return config.features.concat(_self.localFeatures);
             };
         }];

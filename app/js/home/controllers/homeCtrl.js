@@ -1,17 +1,24 @@
-(function(app) {
+(function(homeModule) {
     'use strict';
+    // ci:coverage:exclude
 
-    function HomeCtrl($scope, config, features) {
-        var vm = this;
+    var HomeCtrl = (function () {
 
-        vm.env = config.env;
-        vm.features = features;
-    }
+        function HomeCtrl(config, features) {
+            this.env = config.env;
+            this.features = features;
+        };
 
-    HomeCtrl.prototype.alertMe = function (feature) {
-        alert(feature + '!');
-    }
+        HomeCtrl.prototype.alertMe = function(feature) {
+            alert(feature + '!');
+        };
 
-    app.controller('HomeCtrl', ['$scope', 'config', 'features', HomeCtrl]);
+        HomeCtrl.$inject = ['config', 'features'];
+
+        return HomeCtrl;
+
+    })();
+
+    homeModule.controller('HomeCtrl', HomeCtrl);
 
 })(angular.module('app.home'));

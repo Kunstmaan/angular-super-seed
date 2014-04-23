@@ -2,7 +2,7 @@
     "home": {
         "path": "/",
         "templateUrl": "home.html",
-        "controller": "HomeCtrl as vm",
+        "controller": "HomeCtrl as home",
         "default": true,
         "mixins": ["state"],
         "resolve": {
