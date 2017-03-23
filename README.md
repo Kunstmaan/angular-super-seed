@@ -214,7 +214,7 @@ Created by [@daanporon] and [@spobo] with the help of [@sambego] and [@KimGresse
 [grunt-contrib-connect]: https://github.com/gruntjs/grunt-contrib-connect
 [jshint]: http://www.jshint.com/
 [ui-router]: https://github.com/angular-ui/ui-router
-[mocha]: http://visionmedia.github.io/mocha/
+[mocha]: http://mochajs.org/
 [chai-as-promised]: http://chaijs.com/plugins/chai-as-promised
 [chai]: http://chaijs.com/
 [sinon]: http://sinonjs.org/docs/
